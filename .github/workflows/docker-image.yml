@@ -24,7 +24,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKER_REGISTRY_USER }}/lobe-chat-database
+          images: lobehub/lobe-chat-database
           tags: |
             type=raw,value=latest
             type=ref,event=tag
